@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "kind": "licenses",
+  "skia_commit": "682482c8a67b905f76be24cc3c95215e87dbd3f5",
+  "milestone": "chrome/m157",
+  "bundled_dependencies": [
+    "expat",
+    "freetype",
+    "libjpeg-turbo",
+    "libpng",
+    "libwebp",
+    "ndk-cpu-features",
+    "skcms",
+    "wuffs",
+    "zlib"
+  ],
+  "files": [
+    {
+      "path": "Skia.txt",
+      "size": 1507,
+      "sha256": "5f787c1dee3c56547f09ccc2906ab5f5293c4d8dd6c8654e573216c38e908dbd"
+    },
+    {
+      "path": "third-party/expat/COPYING",
+      "size": 1144,
+      "sha256": "31b15de82aa19a845156169a17a5488bf597e561b2c318d159ed583139b25e87"
+    },
+    {
+      "path": "third-party/freetype/FTL.TXT",
+      "size": 6743,
+      "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f"
+    },
+    {
+      "path": "third-party/freetype/fthash.txt",
+      "size": 1232,
+      "sha256": "5285d96f6aa3188193d5fbefd8710ed6a46af185e0a43817c17acee5f4b1ab3d"
+    },
+    {
+      "path": "third-party/freetype/harfbuzz-headers.txt",
+      "size": 1148,
+      "sha256": "9eb9395c70e884f61081775892fae5949ad7762461bea5753dc5478b0c080302"
+    },
+    {
+      "path": "third-party/freetype/harfbuzz-scripts.txt",
+      "size": 1197,
+      "sha256": "260cfd522bf354ed9c2666777db248c0608e8c7a4110c672f16100aca98c772d"
+    },
+    {
+      "path": "third-party/libjpeg-turbo/LICENSE.md",
+      "size": 5620,
+      "sha256": "96f5b328adbb78eeaaec6980d73fd558cb1e4d62560ed615646bc3cf5e532430"
+    },
+    {
+      "path": "third-party/libjpeg-turbo/README.ijg",
+      "size": 12799,
+      "sha256": "75815e3bf6484201a3c3d17a1bbf10f2e8e3237f84df10a2357ea896db2a81d6"
+    },
+    {
+      "path": "third-party/libpng/LICENSE",
+      "size": 5345,
+      "sha256": "bdb0a645ea18c60507d0368379b1ac5474b92255fcc2d115e07486a7672ba526"
+    },
+    {
+      "path": "third-party/libwebp/COPYING",
+      "size": 1496,
+      "sha256": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf"
+    },
+    {
+      "path": "third-party/libwebp/PATENTS",
+      "size": 1436,
+      "sha256": "cc3273e0694ea5896145e0677699b53471b03ea43021ddc50e7923fbb9f5023c"
+    },
+    {
+      "path": "third-party/ndk-cpu-features/LICENSE-APACHE.txt",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third-party/ndk-cpu-features/LICENSE-BSD.txt",
+      "size": 1398,
+      "sha256": "4102cd5ae35cbdeb0638c350966185e028ea9da863859f70e231c3cb273118d1"
+    },
+    {
+      "path": "third-party/ndk-cpu-features/NOTICE",
+      "size": 577,
+      "sha256": "c870d52f42a8f93023b99a85fe68d02637d6b04e5f35bbcd7f98759adb4e4d49"
+    },
+    {
+      "path": "third-party/skcms/LICENSE",
+      "size": 1635,
+      "sha256": "e59bb5c5c6ba426a9ac4ba9fe667ad14c5166b12aa25be8af1d122b14fbe2e36"
+    },
+    {
+      "path": "third-party/wuffs/LICENSE",
+      "size": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "third-party/wuffs/source-notice.txt",
+      "size": 595,
+      "sha256": "3b2f3521bdfe18740646352b8800fb4b49e57b3e2693805820891b97899ff0a9"
+    },
+    {
+      "path": "third-party/zlib/Chromium.txt",
+      "size": 1536,
+      "sha256": "368cca1106be99d39ecd32a38d8305585d802a475effb66380b91ffc9bcf709b"
+    },
+    {
+      "path": "third-party/zlib/LICENSE",
+      "size": 910,
+      "sha256": "e1cfcc55c325b3f78cf55df9664abaa066e2271dffe8213347d9fccdfbac8f2c"
+    },
+    {
+      "path": "third-party/zlib/zlib-h-notice.txt",
+      "size": 1329,
+      "sha256": "df694330c5856149838d49b822ec23986329fd8413bde5e816874f0ee04d1c56"
+    }
+  ]
+}

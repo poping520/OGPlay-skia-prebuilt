@@ -1,0 +1,6 @@
+/.idea/
+/.local/
+/skia/
+**/__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,1013 @@
+{
+  "schema_version": 1,
+  "kind": "headers",
+  "skia_commit": "682482c8a67b905f76be24cc3c95215e87dbd3f5",
+  "milestone": "chrome/m157",
+  "files": [
+    {
+      "path": "include/codec/SkBmpDecoder.h",
+      "size": 1165,
+      "sha256": "bbd384acfbe4ea2b7e9b24a26bddf89ab0e4969f611c58bffcb56b55a4dcd606"
+    },
+    {
+      "path": "include/codec/SkCodec.h",
+      "size": 46731,
+      "sha256": "633d6a26bde9e1cfcfe0101439f87009211c3a172e23773690e3fa31ddd09fe7"
+    },
+    {
+      "path": "include/codec/SkCodecAnimation.h",
+      "size": 1631,
+      "sha256": "074a0730800f501c27cb4132287221338e6dd8ee0a56f6d6ebcfb6bb994ecab8"
+    },
+    {
+      "path": "include/codec/SkEncodedImageFormat.h",
+      "size": 520,
+      "sha256": "c7e232b142feb6dd1011e283ed2af56db9cbdaf80bdf19b49ddacb3c18a69964"
+    },
+    {
+      "path": "include/codec/SkEncodedOrigin.h",
+      "size": 3491,
+      "sha256": "75f704d5047bfb48f712c20abbe0374543907c9b01876aba195b1df30382a95c"
+    },
+    {
+      "path": "include/codec/SkGifDecoder.h",
+      "size": 1165,
+      "sha256": "a1925c44831771ff7d5266e5733b826b6f4f9998280f43ea999b6f0f3fcfddde"
+    },
+    {
+      "path": "include/codec/SkIcoDecoder.h",
+      "size": 1165,
+      "sha256": "3d061cc98ac2b00f750718cf4329a41c59f9e93c2affbc619e68efb20e99ba39"
+    },
+    {
+      "path": "include/codec/SkJpegDecoder.h",
+      "size": 1518,
+      "sha256": "5cf0aa42a6aa58b34707a535a7c68543c1c4d3eb0b542f5b439fd7a674018eed"
+    },
+    {
+      "path": "include/codec/SkPixmapUtils.h",
+      "size": 842,
+      "sha256": "0a9d546daf8650ad27f282faeb3f20f9fd8e55d25685bc7f247eb87de769401d"
+    },
+    {
+      "path": "include/codec/SkPngDecoder.h",
+      "size": 1548,
+      "sha256": "a389746ff04d03f50fd0ecca92d7176afc03dccb18260a40dea16e5ce0c670b5"
+    },
+    {
+      "path": "include/codec/SkWbmpDecoder.h",
+      "size": 1176,
+      "sha256": "68d2ae919dfde7c1e31fd1d64923f5c37dffee3a6b05a17e19eaee56d31f6d6f"
+    },
+    {
+      "path": "include/codec/SkWebpDecoder.h",
+      "size": 1518,
+      "sha256": "e17fc10a874ae542f02d6e97240e4d82232be9f9e7ae8c92356ab63002b9ef10"
+    },
+    {
+      "path": "include/config/SkUserConfig.h",
+      "size": 6500,
+      "sha256": "1a2c192891ad3a81338c031696fd0286666f4ab46d28e21f37df30ffc953cbc4"
+    },
+    {
+      "path": "include/core/RasterContext.h",
+      "size": 529,
+      "sha256": "1ddb61d862837071951607a7ed220ababaf36df6a92c4686f3f00433fc3b1d11"
+    },
+    {
+      "path": "include/core/SkAlphaType.h",
+      "size": 1756,
+      "sha256": "4e1a8e75b069e79199e3a0b4229ffb3903ff17d3cae7fcdbbb3f60ef2548473e"
+    },
+    {
+      "path": "include/core/SkAnnotation.h",
+      "size": 1446,
+      "sha256": "1d2ddd8d3fe1ada52db192595f69a5a028193d274b984d6bf35167a476769db8"
+    },
+    {
+      "path": "include/core/SkArc.h",
+      "size": 2354,
+      "sha256": "67fd804e55c70dbbdbbfff6912d4a7e48244b42897a8b2afe9f411c4bb779fb4"
+    },
+    {
+      "path": "include/core/SkBBHFactory.h",
+      "size": 1751,
+      "sha256": "483a646d6bf2230e053574bdb0601645b4a782302a6e5935af00f08f3b453019"
+    },
+    {
+      "path": "include/core/SkBitmap.h",
+      "size": 54020,
+      "sha256": "8c016f13466cb93b303596b345fc7f40299e2e2c8836f6e8873cc08bc7fecce3"
+    },
+    {
+      "path": "include/core/SkBlendMode.h",
+      "size": 4247,
+      "sha256": "13578e67b2f1ee0bfdc0a1878e08e59bf4b666297059b16841f53ba2911f49ea"
+    },
+    {
+      "path": "include/core/SkBlender.h",
+      "size": 747,
+      "sha256": "50084450462e4d69eae41584d2e81603bb370c48d0d4877e2798dbbb82d616d5"
+    },
+    {
+      "path": "include/core/SkBlurTypes.h",
+      "size": 524,
+      "sha256": "f4a8a16ead695ec6b8a9aeadfa5bdf07d057550fb82ad79302288ee7ce2f3d15"
+    },
+    {
+      "path": "include/core/SkCPURecorder.h",
+      "size": 246,
+      "sha256": "4586e6d26205d5055547c26ba0bf47cd72db8aedeb08056f0d62fae45e103b9e"
+    },
+    {
+      "path": "include/core/SkCanvas.h",
+      "size": 126966,
+      "sha256": "4852e3243378204bfd6d1ceacdcb9475f5e1df899783f33c14dfaf4bd0de90d8"
+    },
+    {
+      "path": "include/core/SkCanvasVirtualEnforcer.h",
+      "size": 2845,
+      "sha256": "d0995aba018ee0dba00a9e196518283ee37a899c094d099d7c8cf59feede3b3e"
+    },
+    {
+      "path": "include/core/SkCapabilities.h",
+      "size": 783,
+      "sha256": "c6fca942db68c77361b9912b13cf7e8c9e5eed9d19fe0864d6f8a0b4b7378564"
+    },
+    {
+      "path": "include/core/SkClipOp.h",
+      "size": 344,
+      "sha256": "edc01d20d90e6698193e291a0339147ec4c72343c601ae998e81a74f23e7dda1"
+    },
+    {
+      "path": "include/core/SkColor.h",
+      "size": 16974,
+      "sha256": "26a733272e91935424758f838b6b094a2c258fe4f08ba35f53d162e2a14b0cc6"
+    },
+    {
+      "path": "include/core/SkColorFilter.h",
+      "size": 5859,
+      "sha256": "569bc09c03ec7fe79d7cb45cc70db9464668a4f76896acf67848033c2bd0d48c"
+    },
+    {
+      "path": "include/core/SkColorSpace.h",
+      "size": 16084,
+      "sha256": "f7308d5be05b0edbe487a330b49d055359d32d6e0a9524fc81a3c2b26f824093"
+    },
+    {
+      "path": "include/core/SkColorTable.h",
+      "size": 2276,
+      "sha256": "38ad8aa3ffeea26fb6830948a5e598adadaee323755f62da719114db3c810725"
+    },
+    {
+      "path": "include/core/SkColorType.h",
+      "size": 8234,
+      "sha256": "083519ba6a9a06828407ab93b9e2adf7e1ea2866203f34ec1f387785f04b8096"
+    },
+    {
+      "path": "include/core/SkContext.h",
+      "size": 2067,
+      "sha256": "7283ffbfccbf6f3bd7528bdb6fea51936f4fd4e3424a2a1ec131db141e6d0f9c"
+    },
+    {
+      "path": "include/core/SkContextOptions.h",
+      "size": 3553,
+      "sha256": "d679dd4bfde1db40af637f9fca9e384816dd95431571c6682eca91b4909a10a2"
+    },
+    {
+      "path": "include/core/SkContourMeasure.h",
+      "size": 6944,
+      "sha256": "69abe632471afdc8601db0d204d567990c7e96ca53f5334e789bacead34d9923"
+    },
+    {
+      "path": "include/core/SkCoverageMode.h",
+      "size": 791,
+      "sha256": "686030f8fd314052a89c801d9759c5bcb11833a24a1b22f990ea58e8af0334a5"
+    },
+    {
+      "path": "include/core/SkCubicMap.h",
+      "size": 1070,
+      "sha256": "88e237138f6dbab57e1182361b4c2e0b4f8e78319b1b01668e9f69e8f906ed81"
+    },
+    {
+      "path": "include/core/SkData.h",
+      "size": 7703,
+      "sha256": "dbf420417fa49a360e20c9d3a056e672fb44ed2c0d410e43144efba2032192a1"
+    },
+    {
+      "path": "include/core/SkDataTable.h",
+      "size": 3815,
+      "sha256": "f3b6df12c56d863de57a57775a078ee2cd01799e743fbc064ef1b30630c8a975"
+    },
+    {
+      "path": "include/core/SkDocument.h",
+      "size": 2709,
+      "sha256": "101a8c91d164036868dc324886e8205b368ca5201c5d52e3e227ed1e18b86fd4"
+    },
+    {
+      "path": "include/core/SkDrawable.h",
+      "size": 7522,
+      "sha256": "5bd1033bc1761785c1a94567cfb7948cdf20aee16b26fdcca8011cf5435d8620"
+    },
+    {
+      "path": "include/core/SkExecutor.h",
+      "size": 945,
+      "sha256": "0b7f105c3abf66fcc14773975ff885a87d09b07e55ada1bafa99f62f5157b111"
+    },
+    {
+      "path": "include/core/SkFlattenable.h",
+      "size": 3570,
+      "sha256": "c038bd7d1cb1137e4ab3989b16c8f030dbd323bd282940bdaf92c2a9144f67bb"
+    },
+    {
+      "path": "include/core/SkFont.h",
+      "size": 20862,
+      "sha256": "927ef264c87d89c99d3990dfd007867648772d20db0d6b2c49326d6a404d36bc"
+    },
+    {
+      "path": "include/core/SkFontArguments.h",
+      "size": 3762,
+      "sha256": "049928d8024b45b8185224d895057ca30e2a2058d98d324e30b58fca94a3a38f"
+    },
+    {
+      "path": "include/core/SkFontMetrics.h",
+      "size": 6184,
+      "sha256": "f48fd48e8f45f2324001af09fb34baf2c6d803113c0a089673aec541ee249277"
+    },
+    {
+      "path": "include/core/SkFontMgr.h",
+      "size": 7357,
+      "sha256": "a1d95ee43083718427a4daf4c4c4625b335aa92e847008d01e365a80d216c34c"
+    },
+    {
+      "path": "include/core/SkFontParameters.h",
+      "size": 1524,
+      "sha256": "e0e44227883cf121849863b7ad94113f09d4f0e1ec2d20ae58026d87f166bfc0"
+    },
+    {
+      "path": "include/core/SkFontScanner.h",
+      "size": 1767,
+      "sha256": "aae7152bb8af51caaa324f85dc532fffe9a693c4d19943f62e9142d3a6e825f5"
+    },
+    {
+      "path": "include/core/SkFontStyle.h",
+      "size": 2493,
+      "sha256": "8409ce9d54e3b65b2b2f94b72adc503e680632c4adba940945aa10c154167c24"
+    },
+    {
+      "path": "include/core/SkFontTypes.h",
+      "size": 781,
+      "sha256": "df383f8c6d3ba2b2f1ac016a9838e083f2ca52f2ccf65cd515266a7fa4cb1639"
+    },
+    {
+      "path": "include/core/SkFourByteTag.h",
+      "size": 448,
+      "sha256": "7fe02015178519760ab209c7851a9b344ab5da950f6b7c415df196f1b4155a41"
+    },
+    {
+      "path": "include/core/SkGraphics.h",
+      "size": 6390,
+      "sha256": "44a14bb9e61b5fb48913229eda5b7ff749863bc2b1836f3132c230e0f0fe8b12"
+    },
+    {
+      "path": "include/core/SkImage.h",
+      "size": 42692,
+      "sha256": "4082cdc74a29b7000e76cc6b21c6c0be94b381f11f887a1449d0bcff91cc725a"
+    },
+    {
+      "path": "include/core/SkImageFilter.h",
+      "size": 4787,
+      "sha256": "936e154940be00fa6d7b329a2be29bf7c60012c5e213c91b716e61f7648a376f"
+    },
+    {
+      "path": "include/core/SkImageGenerator.h",
+      "size": 5046,
+      "sha256": "7a17c1711d5ba71c149271e659155f8f7081f936c0e4bf7821d3b7d4c65c8c0b"
+    },
+    {
+      "path": "include/core/SkImageInfo.h",
+      "size": 25094,
+      "sha256": "b8587da422c6e74c672740124f3b10c334d0ddd3703b60c908cdfe70954abbfc"
+    },
+    {
+      "path": "include/core/SkM44.h",
+      "size": 14770,
+      "sha256": "46df04f7f7b53f4259564f5b9c382463746fce3c09150d3eee5e2ae39d2f4fb1"
+    },
+    {
+      "path": "include/core/SkMallocPixelRef.h",
+      "size": 1444,
+      "sha256": "19264adaa0c28a3727316ad037eb30e3a37a83277a50317e58888007f4a0f520"
+    },
+    {
+      "path": "include/core/SkMaskFilter.h",
+      "size": 1351,
+      "sha256": "1aa81dabe4454af0b322e34fd9e883ecb67ce71e3cf805f263a9f38a4aad8a2a"
+    },
+    {
+      "path": "include/core/SkMatrix.h",
+      "size": 68729,
+      "sha256": "adf13a462ef5530825ccd277a0f35d7a5cd1d4bdb2e50297c97d2ebb25d3f08a"
+    },
+    {
+      "path": "include/core/SkMesh.h",
+      "size": 17992,
+      "sha256": "81d3b3f9bd5a24629bf9d39e1aa81e0989c83474a69a92625bfb9118b4fb9bf1"
+    },
+    {
+      "path": "include/core/SkMilestone.h",
+      "size": 197,
+      "sha256": "f6ff28876852e46eec0db3c80b8bf364375754b6c80639acd9c5fdf393098df4"
+    },
+    {
+      "path": "include/core/SkOpenTypeSVGDecoder.h",
+      "size": 808,
+      "sha256": "8357f612447123271c6cd3d706a23156fcd3e4a0f9955e2e51d71786411a5ff7"
+    },
+    {
+      "path": "include/core/SkOverdrawCanvas.h",
+      "size": 3806,
+      "sha256": "fc448894d1365e6ef8f23495e5d0f11355b2452b6c5f5b7a706ee7894f7c423b"
+    },
+    {
+      "path": "include/core/SkPaint.h",
+      "size": 26158,
+      "sha256": "cd7ac1349a7bbdd6dbbe33b1aa9043b05446352884162c172d09da156e6e92a5"
+    },
+    {
+      "path": "include/core/SkPath.h",
+      "size": 44537,
+      "sha256": "4e1fb5241775704c2bc2f2fd608d33b25caac006ccfb040884ae4e142efe708d"
+    },
+    {
+      "path": "include/core/SkPathBuilder.h",
+      "size": 45230,
+      "sha256": "af66117afa97c0c465e58832e4e46198cbda1bae590bf164d9a3bd4ef98b382f"
+    },
+    {
+      "path": "include/core/SkPathEffect.h",
+      "size": 2992,
+      "sha256": "070494543581b46dc534b301be3280f7de0b86c6724b6b7da59388a59e4fb375"
+    },
+    {
+      "path": "include/core/SkPathIter.h",
+      "size": 2446,
+      "sha256": "857992982ac6a6f54f0816b8d3c432dfaa120953a1d44dc43eb1201af25280d3"
+    },
+    {
+      "path": "include/core/SkPathMeasure.h",
+      "size": 3382,
+      "sha256": "c38e91af447a300302bec20625d1c4e2c59cd5c67a771891098777084c01f964"
+    },
+    {
+      "path": "include/core/SkPathTypes.h",
+      "size": 2031,
+      "sha256": "53a8e4cb554ba0d72d85099897b4ad826155899ae4e34216fdf61f73753866c5"
+    },
+    {
+      "path": "include/core/SkPathUtils.h",
+      "size": 1286,
+      "sha256": "419f580107c8b12b1d67fe7e4a3cecfc9b7f0675744b8185382b0646f7ef5909"
+    },
+    {
+      "path": "include/core/SkPicture.h",
+      "size": 13099,
+      "sha256": "6002e5758e7c7016a129c7956d608c5d823fcf0571b0a83a104ad70779f1993f"
+    },
+    {
+      "path": "include/core/SkPictureRecorder.h",
+      "size": 4286,
+      "sha256": "78ccb04f36dc18fd056942b78bd2ccb118bf8f6d9b9657e02741d128a982e6a5"
+    },
+    {
+      "path": "include/core/SkPixelRef.h",
+      "size": 4381,
+      "sha256": "e642a55c4eb6c68151ccfbbc3c72865999f471e4c7e96cf856fcf9a4cd7116ea"
+    },
+    {
+      "path": "include/core/SkPixmap.h",
+      "size": 32397,
+      "sha256": "72f8df678f9e0ae4824f26fb7744d5de3ecf34de976c8036517745ab5ac4c833"
+    },
+    {
+      "path": "include/core/SkPoint.h",
+      "size": 16754,
+      "sha256": "5738cc23ce836e68be3a674cacec66147b8aa8975bcd2ae293f2fe14932551c9"
+    },
+    {
+      "path": "include/core/SkPoint3.h",
+      "size": 4007,
+      "sha256": "f240e9c3195ec8e77917ecaf4918cc4f0d1cf6ba6858af2454461c8c06b857c4"
+    },
+    {
+      "path": "include/core/SkRRect.h",
+      "size": 21479,
+      "sha256": "d6cfe70595639148b515fa03b128ff5d8896d4104e171cd9241a22d8071fc624"
+    },
+    {
+      "path": "include/core/SkRSXform.h",
+      "size": 1989,
+      "sha256": "e827287f05c3bbc9605fbc17798d3de2369ba673635740178b77f36308023c86"
+    },
+    {
+      "path": "include/core/SkRasterHandleAllocator.h",
+      "size": 3915,
+      "sha256": "23face2765365fa2ffe7058261ca21be83637a40a71dccd77f726fcb6c4e1d35"
+    },
+    {
+      "path": "include/core/SkRecorder.h",
+      "size": 1613,
+      "sha256": "c4e6866a38448102ff6b29422aedf1c34f9108562354ad9aab07c8311393c6a9"
+    },
+    {
+      "path": "include/core/SkRect.h",
+      "size": 51132,
+      "sha256": "03e5fb31037aa3a40191c92189da435c92062f3f3ad90be044a0df9b4692ac86"
+    },
+    {
+      "path": "include/core/SkRefCnt.h",
+      "size": 13457,
+      "sha256": "39f7cd9cd3806be6eef0533ec9bf13e0cdfcfc2ee2883e50ca8d36b9c86da85b"
+    },
+    {
+      "path": "include/core/SkRegion.h",
+      "size": 24510,
+      "sha256": "e2c9d8a05e5889e2ed6c8f56c2536e560e07ddd71f511918f40cc79964d562f4"
+    },
+    {
+      "path": "include/core/SkSamplingOptions.h",
+      "size": 3490,
+      "sha256": "1d63243fa796d52214cfb59a29dd94dade117a17a04d0785325cc3b1b24c92a4"
+    },
+    {
+      "path": "include/core/SkScalar.h",
+      "size": 4965,
+      "sha256": "dd0f81cdf750725537baa134ec2343098f60a9515ad9a4b048f5d3b1c9dc4a18"
+    },
+    {
+      "path": "include/core/SkSerialProcs.h",
+      "size": 4894,
+      "sha256": "cd32aa2a84e0efc1f1a50c7d0fe21f2b000e28f715d3d3aa9b0f80f88da9aad1"
+    },
+    {
+      "path": "include/core/SkShader.h",
+      "size": 4910,
+      "sha256": "cfbebe377e0c6af054688a604df3fcd9ce63593b5dc413bb8e12ee6781621a5c"
+    },
+    {
+      "path": "include/core/SkSize.h",
+      "size": 2900,
+      "sha256": "28b191c992ad0124fd5b63733516fa45b07dd27351574d6d9a58e63fbe22d676"
+    },
+    {
+      "path": "include/core/SkSpan.h",
+      "size": 6408,
+      "sha256": "46ee18609d9fbfd91472ed7f973a45ea4f970601a063ad27758b4c08e1a49c59"
+    },
+    {
+      "path": "include/core/SkStream.h",
+      "size": 17884,
+      "sha256": "bf029b5fbce91163386ed98d621bfd3ee82dcb634484cae406d8a4355d75d678"
+    },
+    {
+      "path": "include/core/SkStrikeRef.h",
+      "size": 3666,
+      "sha256": "66c20353cd98e8935419d766ce4973cc4221782f57093c2b0bb42bf218e84c52"
+    },
+    {
+      "path": "include/core/SkString.h",
+      "size": 11709,
+      "sha256": "64a2c6f91a03496c7de5c73a26922db03ee32ac4d7294976d3f75a492b77d830"
+    },
+    {
+      "path": "include/core/SkStrokeRec.h",
+      "size": 4914,
+      "sha256": "59af29734a7cdaf4d51270a8de0c1694fce8aea64879c52d2cb0ba2cbf1aae36"
+    },
+    {
+      "path": "include/core/SkSurface.h",
+      "size": 32576,
+      "sha256": "ca4b16ecc46a09374cd66314b4df20b1c4c87b05f5ddc265b109bff44a2e5f2b"
+    },
+    {
+      "path": "include/core/SkSurfaceProps.h",
+      "size": 4331,
+      "sha256": "f6e7ef317768181919aec2e57f729426f4ccefca3e7bc0b8cc533cd6f0becc97"
+    },
+    {
+      "path": "include/core/SkSwizzle.h",
+      "size": 423,
+      "sha256": "6b5fcdbaacc5d4c1d1ba5efa8d682a59c5461abc8c813da4c98adfb0397f2eec"
+    },
+    {
+      "path": "include/core/SkTextBlob.h",
+      "size": 23787,
+      "sha256": "73273e2fb0f69f1b4e7878c2af0aa011023b88578221cda6836ebcbb79245f61"
+    },
+    {
+      "path": "include/core/SkTextureCompressionType.h",
+      "size": 1122,
+      "sha256": "0248b95d8c53f9ff2807f9c9eadffa0f5390ef49cceb0fdfca168cb7e730490b"
+    },
+    {
+      "path": "include/core/SkTileMode.h",
+      "size": 885,
+      "sha256": "3ab47b829776fd204971f8aaf336ac8e03e4fa0f8ffbc1888d78fa752f6ffa1a"
+    },
+    {
+      "path": "include/core/SkTiledImageUtils.h",
+      "size": 5186,
+      "sha256": "622505de4d6c41dfdf26054ac00d0a230fd7596856a848c5adcb783bdd011dbd"
+    },
+    {
+      "path": "include/core/SkTraceMemoryDump.h",
+      "size": 4922,
+      "sha256": "710b70901f778ed4ca5789fe9fcd859a098d6006904fe83b0551316c9fe9647e"
+    },
+    {
+      "path": "include/core/SkTypeface.h",
+      "size": 19826,
+      "sha256": "6c95b9701536e5fa5cc65f9f93b85b75c4d8b6ff76acede091f2d50ca2705575"
+    },
+    {
+      "path": "include/core/SkTypes.h",
+      "size": 5567,
+      "sha256": "617107436969cdd06f50891b90163d4ce089ecfafabdef9179a1c1f8be645656"
+    },
+    {
+      "path": "include/core/SkUnPreMultiply.h",
+      "size": 1235,
+      "sha256": "3d1124e265abadb6cdaf4b86feff6d0986e887878a2d3c1c72fcc87d31aee3a4"
+    },
+    {
+      "path": "include/core/SkVertices.h",
+      "size": 4500,
+      "sha256": "bb8b2890c4415c94a24994f1b5361beb7990f8cbc7e42adcce8da31a7eef7ddd"
+    },
+    {
+      "path": "include/core/SkYUVAInfo.h",
+      "size": 13331,
+      "sha256": "bd24f218c393eb23f6c8501e8174864a09be34e5d397fdf9ce803a2978962ea1"
+    },
+    {
+      "path": "include/core/SkYUVAPixmaps.h",
+      "size": 13683,
+      "sha256": "9615ea6734f6c273241c4567840ea204c1da51533d5451bbe7d93d7d27b34498"
+    },
+    {
+      "path": "include/cpu/Recorder.h",
+      "size": 2777,
+      "sha256": "111049968306d098d8547d220bc69b920c275f4b75ac03da910ed3479a6f7d87"
+    },
+    {
+      "path": "include/effects/Sk1DPathEffect.h",
+      "size": 1204,
+      "sha256": "268c74dc4aeeee3e44f20af5fa8f8ebf481e8412cb8dab1311824427ed498a69"
+    },
+    {
+      "path": "include/effects/Sk2DPathEffect.h",
+      "size": 723,
+      "sha256": "fde91e042db78a3bd49cdd233c876ed6acad19d9e5692d272d762d51fa0c9d32"
+    },
+    {
+      "path": "include/effects/SkBlenders.h",
+      "size": 693,
+      "sha256": "827ac285ba1b295015e09c350267c8b2b82a755389166091db6daeb687ac7485"
+    },
+    {
+      "path": "include/effects/SkBlurMaskFilter.h",
+      "size": 1198,
+      "sha256": "9da4d12133d31917a1060061b9fdf706ed20de0e5d30a1c750993b9129703952"
+    },
+    {
+      "path": "include/effects/SkColorMatrix.h",
+      "size": 1909,
+      "sha256": "ddb5a96934102b1a16b86cf063bfd3b032fca68633631b2597b4ffb9872164aa"
+    },
+    {
+      "path": "include/effects/SkColorMatrixFilter.h",
+      "size": 603,
+      "sha256": "5613dd58e612fd6fde65fe3bbf21be1bcec5290f3d7b10240485e5641339cdbf"
+    },
+    {
+      "path": "include/effects/SkCornerPathEffect.h",
+      "size": 806,
+      "sha256": "3c874ded9a4d6a95af24e8ec8059d1376766fbb131b1ef5819a24d9d30236e4e"
+    },
+    {
+      "path": "include/effects/SkDashPathEffect.h",
+      "size": 1466,
+      "sha256": "de4c4ffd0be3c1fc5845486e8ddcefb38d80c3f1ff393cde94e6e31dc606db88"
+    },
+    {
+      "path": "include/effects/SkDiscretePathEffect.h",
+      "size": 1404,
+      "sha256": "516b8a18e4379c0167f2c84c122dd2ba5dcc5cd454e665b212043b2a8e67989e"
+    },
+    {
+      "path": "include/effects/SkGradient.h",
+      "size": 8839,
+      "sha256": "0a8fcbf774a5c22004c878888de758df8473207929456c5eba2498f76c119556"
+    },
+    {
+      "path": "include/effects/SkHighContrastFilter.h",
+      "size": 2394,
+      "sha256": "805352845a4261870015982bc1b3e4073580ad0a22c5ddf0ec31137a6b0c232a"
+    },
+    {
+      "path": "include/effects/SkImageFilters.h",
+      "size": 38138,
+      "sha256": "b900ff32f41c60b93bf98ef8b629a62a412bb992359be5498a98cc2d21887a89"
+    },
+    {
+      "path": "include/effects/SkLumaColorFilter.h",
+      "size": 1118,
+      "sha256": "4630871442ee40145b7eafe9919a6a5a9ca86b49b09876a040f3f033b92c2bb4"
+    },
+    {
+      "path": "include/effects/SkOverdrawColorFilter.h",
+      "size": 790,
+      "sha256": "cacef692fc9a646e04f63826b311b76254e28a445237faf5566cb29983f7c961"
+    },
+    {
+      "path": "include/effects/SkPerlinNoiseShader.h",
+      "size": 2238,
+      "sha256": "3b2d64b8087e498f1927df44d1dea0bf7e7623e69b670e761fc304fdc5d92593"
+    },
+    {
+      "path": "include/effects/SkRuntimeEffect.h",
+      "size": 20321,
+      "sha256": "bd916b16e6c979d017327cf1aee5e34f8642e6c41f03dd2b324f85fcddb53cb4"
+    },
+    {
+      "path": "include/effects/SkShaderMaskFilter.h",
+      "size": 646,
+      "sha256": "b0cf696bbc1020ae0c18e1d3d68f8314d666ec789277f68ba1a92cb635a463ed"
+    },
+    {
+      "path": "include/effects/SkTableMaskFilter.h",
+      "size": 1346,
+      "sha256": "b2c5d599e0394b2534913bfe8aa7f3ff80635974e413f99d89159e3ece260003"
+    },
+    {
+      "path": "include/effects/SkTrimPathEffect.h",
+      "size": 1543,
+      "sha256": "ab1ed7852cc8c978cf21e8f8317b0d0ad2be891af6500b3f89d5b073f515f8ae"
+    },
+    {
+      "path": "include/encode/SkEncoder.h",
+      "size": 1534,
+      "sha256": "b04676f476beffc85a65cdbc73131d7e5164ac67f77c8bb1dc5ee5ff0cdfa854"
+    },
+    {
+      "path": "include/encode/SkICC.h",
+      "size": 1548,
+      "sha256": "89a4cf9cec99d0ad207804847c4c92bee3f1fba5caa482213d532e2418e65e41"
+    },
+    {
+      "path": "include/encode/SkJpegEncoder.h",
+      "size": 3796,
+      "sha256": "db4ce2fa7d226596aa800e20b98cf099f27dad62712d7c63256a863352292028"
+    },
+    {
+      "path": "include/encode/SkPngEncoder.h",
+      "size": 4399,
+      "sha256": "ce4c99dc5594fd7844f2bf8b857bbafc4be2aa1a0598accfc13cfa66bc6017cc"
+    },
+    {
+      "path": "include/pathops/SkPathOps.h",
+      "size": 4697,
+      "sha256": "fe8918fc8b91f694b2d6c5d3920edaa937761bac4026aa065b1b7819f785a6fe"
+    },
+    {
+      "path": "include/ports/SkCFObject.h",
+      "size": 5317,
+      "sha256": "387d49c27e22ab8b59a75f63322f4f3e40ed3937c50d9a1c8936e060808d8eda"
+    },
+    {
+      "path": "include/ports/SkFontMgr_empty.h",
+      "size": 508,
+      "sha256": "652c9ec8b005d34b7322aeaac465d4c88068efe95cc74a712c5bd909605c729a"
+    },
+    {
+      "path": "include/ports/SkFontScanner_FreeType.h",
+      "size": 355,
+      "sha256": "f63355f9c73a105ac27c848ea4745933b0bbedec50045d65ea83ca77fd868711"
+    },
+    {
+      "path": "include/ports/SkImageGeneratorCG.h",
+      "size": 824,
+      "sha256": "e1a1b613e80d627c926b77e79a357c868571e770c14e94a20e64ceefc0a56822"
+    },
+    {
+      "path": "include/private/SkAPI.h",
+      "size": 1660,
+      "sha256": "7fff0712d60946b882b0aa7a00185b4baf31b2659b65d67d92152b2218ae101f"
+    },
+    {
+      "path": "include/private/SkASAN.h",
+      "size": 1716,
+      "sha256": "7bde3faed763ba6f93f0b0b84cb72c6bb187e5b6ba39007df97df741474fd04b"
+    },
+    {
+      "path": "include/private/SkAlign.h",
+      "size": 1794,
+      "sha256": "b1d0a00d4b0fbf4c1daa9ca9e1efd24c7a822e7fecb4e34e0a354d8eb1b30ca6"
+    },
+    {
+      "path": "include/private/SkAlignedStorage.h",
+      "size": 1133,
+      "sha256": "f77627116f03995d40a4a0373c03ff6ce740baaf86a72432517ff426b7b6381f"
+    },
+    {
+      "path": "include/private/SkAssert.h",
+      "size": 6823,
+      "sha256": "1bf3b0f45731d1f38bc447407d845bb031dd4f372614c3ffddee07cf67750da8"
+    },
+    {
+      "path": "include/private/SkAttributes.h",
+      "size": 7413,
+      "sha256": "44baf23428b7e9eada7ca63913f90994d27ca34c414b362b75b97fc5968f6db6"
+    },
+    {
+      "path": "include/private/SkCPUTypes.h",
+      "size": 775,
+      "sha256": "3b4b118465517b61823aac8495909c1e2738f76aba9dba9a51f2caac35a3c92b"
+    },
+    {
+      "path": "include/private/SkContainers.h",
+      "size": 2027,
+      "sha256": "1ae9752e1d814ebecb5b6fe2b5e8d2ab097ce11e19bb34b0e9d20ae144652e2b"
+    },
+    {
+      "path": "include/private/SkDebug.h",
+      "size": 634,
+      "sha256": "e7425b888837a560cd005f2ce752979c0d646c663aef92c977d8aabaf676eb34"
+    },
+    {
+      "path": "include/private/SkDeque.h",
+      "size": 3743,
+      "sha256": "941841bda2bdabf4de747abc08621fd4af8c1d052941615ecdc833a29cb1907c"
+    },
+    {
+      "path": "include/private/SkEncodedInfo.h",
+      "size": 7828,
+      "sha256": "fce1b89d2c218acdca32b2bc72dfccb994172d6349b4e9daf52d1dd7b448c58c"
+    },
+    {
+      "path": "include/private/SkEnumBitMask.h",
+      "size": 3436,
+      "sha256": "c6d1557823c52248884bb73fe47ea1c602baf534eaa4d4f69d38095829b486a3"
+    },
+    {
+      "path": "include/private/SkFeatures.h",
+      "size": 5848,
+      "sha256": "d20d246f13400fe5a0e9f335611d825f936fa469e043e967849db673476196d1"
+    },
+    {
+      "path": "include/private/SkFixed.h",
+      "size": 5164,
+      "sha256": "0e70e9096a31bcee59712ec60fe59f695b52bf8b23453759334914d725409507"
+    },
+    {
+      "path": "include/private/SkFloatingPoint.h",
+      "size": 6935,
+      "sha256": "5ec4fc13cf8a4830392fc33d9e85d642f055a1de4cc30195ca6bd60da8dc9c2f"
+    },
+    {
+      "path": "include/private/SkHdrMetadata.h",
+      "size": 12379,
+      "sha256": "e99badd8fd7cec5fa3f6b655b84242446491db5c8a00bc7e37af721eadf0348d"
+    },
+    {
+      "path": "include/private/SkIDChangeListener.h",
+      "size": 2329,
+      "sha256": "b2bceb660ea4021eb0ffd3236d89ebc8428edb4060219ad8b22c2dfa1d59cc14"
+    },
+    {
+      "path": "include/private/SkLoadUserConfig.h",
+      "size": 2431,
+      "sha256": "eb0fae79a274c5a8d089f7e14b0414fb6f2b55276f7f3ef9ce529a786acf8450"
+    },
+    {
+      "path": "include/private/SkLog.h",
+      "size": 1656,
+      "sha256": "7bdfc059f62ce5072db54f3c85a09cc5a149b240752dfa9053515fe25d32900d"
+    },
+    {
+      "path": "include/private/SkLogPriority.h",
+      "size": 837,
+      "sha256": "6fcd70ad1a6228067396542a99000d32bc4ea1cc0b50d26694e07e36ffa60bfc"
+    },
+    {
+      "path": "include/private/SkMacros.h",
+      "size": 6497,
+      "sha256": "42adcd76b5ffcbb99059022037c103a4716553bdd9b5f301dc86690b309fed01"
+    },
+    {
+      "path": "include/private/SkMalloc.h",
+      "size": 5235,
+      "sha256": "8374db4caa5574c5c608ff912b33b8fe0dabd7ea9fdbf0eb94ae5287b004480e"
+    },
+    {
+      "path": "include/private/SkMath.h",
+      "size": 2237,
+      "sha256": "b27297f80ea13e15ade6c8416ad58701496ce958ad767759f445824e18c82086"
+    },
+    {
+      "path": "include/private/SkMutex.h",
+      "size": 1834,
+      "sha256": "ce6d4573a460ec58c2f036cd5105f7010a9c77f9d37992a35724c50b41433b67"
+    },
+    {
+      "path": "include/private/SkNoncopyable.h",
+      "size": 751,
+      "sha256": "3d198fc15693f432d4938e0ebe676b24fb36254e2d7cba5ad8e5b3c0fb894472"
+    },
+    {
+      "path": "include/private/SkOnce.h",
+      "size": 1859,
+      "sha256": "7d63310c9c5839059a6e77b53f2363c6d7150564e3b4a20c10e3bc0c310256b0"
+    },
+    {
+      "path": "include/private/SkPathRef.h",
+      "size": 2830,
+      "sha256": "18d4860f29ae0e0bc956b1288c89c77ea67c9fa5aad51b61ee72d1c50f02c27e"
+    },
+    {
+      "path": "include/private/SkPixelStorage.h",
+      "size": 1501,
+      "sha256": "b8cab859185716b98a3172a1efe8e783493030e5fbd332df5461b667caf4cef2"
+    },
+    {
+      "path": "include/private/SkSLSampleUsage.h",
+      "size": 2586,
+      "sha256": "466cc387fce92451fb34e8ad682243a693976cd9a759926ffbdd6bd351079672"
+    },
+    {
+      "path": "include/private/SkSafe32.h",
+      "size": 1356,
+      "sha256": "ee0ca55b299c5e9a7ee28531355b8f1c1ba8a1dd56c22bafc493641209d97275"
+    },
+    {
+      "path": "include/private/SkSemaphore.h",
+      "size": 2831,
+      "sha256": "4f2caeb57e374c8bf3699b190765011c2752b86544b0936cd3427e24bd866db2"
+    },
+    {
+      "path": "include/private/SkTArray.h",
+      "size": 25764,
+      "sha256": "e04cb5d7ca13091f80c313c43dd7771a68508b64633608d2ca7d0e1eebb9904b"
+    },
+    {
+      "path": "include/private/SkTDArray.h",
+      "size": 7496,
+      "sha256": "3108ab7202206eae17d3839d14bbf6a994b5d8035944be6344517c9b18c57b45"
+    },
+    {
+      "path": "include/private/SkTFitsIn.h",
+      "size": 3799,
+      "sha256": "57a03bcd04f7f3cb237623ef94ad785c5d397ce968b232398d2c3e6fa34f276f"
+    },
+    {
+      "path": "include/private/SkTLogic.h",
+      "size": 2406,
+      "sha256": "d1efad1cf1dd24d2cedc5c91011534a9b5bda6e6e8dcd8395cbe9e55b802d39b"
+    },
+    {
+      "path": "include/private/SkTPin.h",
+      "size": 570,
+      "sha256": "6a37dcfe77a2c5b2482fa2340db3771b681b6ea87596704a35fa29923e9ee611"
+    },
+    {
+      "path": "include/private/SkTemplates.h",
+      "size": 15593,
+      "sha256": "ce3665a3aad975e9b6d98326171378263b4b7ab184a7868d66fb7af615e72839"
+    },
+    {
+      "path": "include/private/SkThreadAnnotations.h",
+      "size": 3453,
+      "sha256": "db04b25f616b86886b76d4223f650ccdd97482c167cd5dfc89db617923dec9e8"
+    },
+    {
+      "path": "include/private/SkThreadID.h",
+      "size": 493,
+      "sha256": "bdc10c0efa5af350998ed9909a0642fdc6c447152def9af5e5200052477b907d"
+    },
+    {
+      "path": "include/private/SkTo.h",
+      "size": 1545,
+      "sha256": "a7c7ba4c6510010ca4fc94b9dff3d2a15a45228c428612b6e6c33d64f7a0c3cb"
+    },
+    {
+      "path": "include/private/SkTypeTraits.h",
+      "size": 2042,
+      "sha256": "005a25b3dd5ed6d1ec06580be30c693db869ebe76c395d9822ddf8247dc05863"
+    },
+    {
+      "path": "include/private/SkWeakRefCnt.h",
+      "size": 6384,
+      "sha256": "a4ea1a122d1b2167230ec1d04ed462e48d619a88aa91e6bd009d6b341ae1fb0e"
+    },
+    {
+      "path": "include/sksl/SkSLDebugTrace.h",
+      "size": 454,
+      "sha256": "391ed8ed52ac8e5f4c331e249b5e9c58c49139cfe04edff15718e4b6c319f4be"
+    },
+    {
+      "path": "include/sksl/SkSLVersion.h",
+      "size": 426,
+      "sha256": "17531acbc5b7e361c9e6d9ee9512a8b734fe16a244c448ee05af6f3fb24c53e6"
+    },
+    {
+      "path": "include/utils/SkCamera.h",
+      "size": 2662,
+      "sha256": "b50d2852e18df244a95825ff4b42c5a6a2d9a29589dd2ba17c63243639a0cc3d"
+    },
+    {
+      "path": "include/utils/SkCanvasStateUtils.h",
+      "size": 3250,
+      "sha256": "d4a18f85980ed8ef40c5454466421422ea85a1b4d6404d20781248a56091cd10"
+    },
+    {
+      "path": "include/utils/SkCustomTypeface.h",
+      "size": 1865,
+      "sha256": "b642a1535823755d355093de6a704f7fbd2b5f8b92dca8e470a11b78e8e68301"
+    },
+    {
+      "path": "include/utils/SkEventTracer.h",
+      "size": 3663,
+      "sha256": "e4cddc9d756f1a7b281fe0e3ce4a2b99cd380e128ac1d9fff7bf5a8b19936353"
+    },
+    {
+      "path": "include/utils/SkLogHandler.h",
+      "size": 1611,
+      "sha256": "746c39dc01f3a6ec320943ae31bba69e77ff0566d4bd68d45e774467894c2667"
+    },
+    {
+      "path": "include/utils/SkNWayCanvas.h",
+      "size": 4705,
+      "sha256": "fd67e2f1456a61e9f2e1b7906e06352a74dcaaaa2d04a7d44a2a152d80e17f62"
+    },
+    {
+      "path": "include/utils/SkNoDrawCanvas.h",
+      "size": 3664,
+      "sha256": "5dc9faebcf27de89f4d263f9c2b676b148a9579855958ee030cec862f7d40427"
+    },
+    {
+      "path": "include/utils/SkNullCanvas.h",
+      "size": 424,
+      "sha256": "28b09806fdfcc1d0951aef7334d77ac1133f315ca76154c6c90726a716ea19ef"
+    },
+    {
+      "path": "include/utils/SkOrderedFontMgr.h",
+      "size": 2239,
+      "sha256": "f8e6171ea643382554392e34bc39aafc5fefeaf6d139c7af674a7d7df1bd19e1"
+    },
+    {
+      "path": "include/utils/SkPaintFilterCanvas.h",
+      "size": 5496,
+      "sha256": "711a6875530ea06533a18b45904e8c07cd9914a9e2d2eb9ec72c3c3203830f69"
+    },
+    {
+      "path": "include/utils/SkParse.h",
+      "size": 1153,
+      "sha256": "4be99163df694f5373e827c1cce39b2951e412ca98e81d50a062ef7b1092d2ae"
+    },
+    {
+      "path": "include/utils/SkParsePath.h",
+      "size": 755,
+      "sha256": "7bc0eb60165dbc3abac7c3b71576ce330c77984e30cde942c5060675ebf545de"
+    },
+    {
+      "path": "include/utils/SkShadowUtils.h",
+      "size": 4827,
+      "sha256": "982074871b24b4e5b43f00c1a996feb5213e674aef304678b67c335d65f1a290"
+    },
+    {
+      "path": "include/utils/SkTextUtils.h",
+      "size": 1153,
+      "sha256": "0c6b062b533d63030c59b72b3e84aa9fe29c6373787ecd5bc93f876834c5e8e2"
+    },
+    {
+      "path": "include/utils/SkTraceEventPhase.h",
+      "size": 773,
+      "sha256": "1665e32912ce2b051b623d0c1cf2b924998917cf98d855bb638becc6d9e4740f"
+    },
+    {
+      "path": "include/utils/mac/SkCGUtils.h",
+      "size": 2958,
+      "sha256": "64195afd0d1e5104fb8f87624c09855bf8077b1c08e5a61d68b1a3a874315dd5"
+    },
+    {
+      "path": "modules/skcms/skcms.h",
+      "size": 207,
+      "sha256": "f3431fe230076dda4dcad5c3b1cc4789ef6d71967f254c6fdac32a3b97bb94de"
+    },
+    {
+      "path": "modules/skcms/src/skcms_public.h",
+      "size": 22626,
+      "sha256": "0c66273645290064c071730dd649625f214358b3045e25418accd562ef0d5763"
+    }
+  ]
+}
