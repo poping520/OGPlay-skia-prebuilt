@@ -58,6 +58,11 @@ def fixtures(root: Path) -> list[Path]:
         + png_chunk(b"IDAT", zlib.compress(row * 12)) + png_chunk(b"IEND", b"")
     )
     for image_format, destination in (("jpeg", jpeg), ("gif", gif)):
+        if sys.platform == "win32":
+            from PIL import Image
+            with Image.open(png) as image:
+                image.save(destination, format=image_format, **({"quality": 100} if image_format == "jpeg" else {}))
+            continue
         command = ["sips", "-s", "format", image_format]
         if image_format == "jpeg":
             command += ["-s", "formatOptions", "best"]
@@ -109,9 +114,12 @@ def main() -> None:
     parser.add_argument("--font", type=Path)
     parser.add_argument("--android-sdk", type=Path, default=DEFAULT_ANDROID_SDK)
     parser.add_argument("--serial", help="ADB device serial for the Android smoke test")
+    parser.add_argument("--compiler", choices=("clang-cl", "msvc"), default="clang-cl",
+                        help="Windows smoke consumer compiler")
     args = parser.parse_args()
     sdk = args.sdk.resolve()
     manifest = verify_sdk(sdk, args.android_sdk)
+    windows = manifest["platform"] == "windows"
     cpu = manifest["target_cpu"]
     ndk = AndroidNdk.from_sdk(args.android_sdk) if manifest["platform"] == "android" else None
     label = f"android-{cpu}" if ndk else cpu
@@ -129,7 +137,20 @@ def main() -> None:
         for framework in manifest["system_frameworks"]:
             command += ["-framework", framework]
         start = time.monotonic()
-        run([*command, "-o", binary], root)
+        if windows:
+            from windows_skia import WindowsTools
+            tools = WindowsTools()
+            binary = binary.with_suffix(".exe")
+            compiler = (tools.vc / f"Tools/MSVC/{tools.vc_version}/bin/Hostx64/x64/cl.exe"
+                        if args.compiler == "msvc" else tools.tool("clang-cl"))
+            command = [compiler, "/nologo", "/std:c++20", "/MD", "/GR", "/EHsc", "/utf-8",
+                       f"/I{headers}", *[f"/D{x}" for x in manifest["consumer_defines"]],
+                       REPOSITORY_ROOT / "tools/smoke_skia.cpp",
+                       *[sdk / name for name in manifest["link_order"]],
+                       f"/Fe{binary}", "/link", *manifest["system_libraries"]]
+            run(command, root)
+        else:
+            run([*command, "-o", binary], root)
         if ndk:
             ndk.verify_executable(binary)
         print(f"{label}: C++20 link passed ({time.monotonic() - start:.2f}s)", flush=True)
@@ -141,7 +162,7 @@ def main() -> None:
             if probe.returncode:
                 print("x64: Rosetta unavailable; runtime checks skipped after successful link")
                 return
-        if not shutil.which("sips"):
+        if not windows and not shutil.which("sips"):
             raise RuntimeError("sips is required to create smoke test fixtures")
         font = args.font.resolve() if args.font else rom_font()
         start = time.monotonic()

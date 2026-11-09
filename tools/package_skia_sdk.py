@@ -98,7 +98,7 @@ def read_json(path: Path) -> dict:
 
 def manifest_files(root: Path) -> list[dict]:
     records = []
-    for path in sorted(root.rglob("*")):
+    for path in sorted(root.rglob("*"), key=lambda path: path.relative_to(root).as_posix()):
         if path.is_symlink():
             raise RuntimeError(f"SDK contains a symlink: {path}")
         if path.is_file() and path != root / SDK_MANIFEST and path.name != ".DS_Store":
@@ -262,6 +262,9 @@ def validate_platform(manifest: dict) -> tuple[str, str]:
 
 def verify_sdk(sdk: Path, android_sdk: Path = DEFAULT_ANDROID_SDK) -> dict:
     manifest = read_json(sdk / SDK_MANIFEST)
+    if manifest.get("platform") == "windows":
+        from windows_skia import verify_windows_sdk
+        return verify_windows_sdk(sdk)
     platform_name, cpu = validate_platform(manifest)
     if (manifest.get("link_order") != [LIBRARY]
             or manifest.get("shared_headers") != "include"
@@ -282,6 +285,9 @@ def verify_sdk(sdk: Path, android_sdk: Path = DEFAULT_ANDROID_SDK) -> dict:
 
 def package_sdk(build: Path, root: Path, android_sdk: Path = DEFAULT_ANDROID_SDK) -> Path:
     manifest = read_json(build / BUILD_MANIFEST)
+    if manifest.get("platform") == "windows":
+        from windows_skia import package_windows_sdk
+        return package_windows_sdk(build, root)
     platform_name, cpu = validate_platform(manifest)
     archive = build / SDK_ARTIFACT
     if manifest.get("artifacts") != [SDK_ARTIFACT] or manifest.get("files") != [file_record(archive, build)]:
@@ -316,6 +322,14 @@ def self_test() -> None:
             assert "SHA-256" in str(error)
         else:
             raise AssertionError("corrupted payload unexpectedly verified")
+        # WindowsPath sorts case-insensitively; manifests use POSIX lexical order.
+        ordering = root / "ordering"
+        ordering.mkdir()
+        for name in ("SkBlender.h", "SkBlendMode.h", "SkA.h"):
+            (ordering / name).write_text(name, encoding="utf-8")
+        assert [record["path"] for record in manifest_files(ordering)] == [
+            "SkA.h", "SkBlendMode.h", "SkBlender.h",
+        ]
         failed = root / "failed"
         try:
             with staging(failed):

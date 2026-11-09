@@ -437,7 +437,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("action", nargs="?", default="all",
                         choices=("sync", "configure", "build", "verify", "all", "print-config"))
-    parser.add_argument("--platform", choices=("macos", "android"), default="macos")
+    parser.add_argument("--platform", choices=("macos", "android", "windows"), default="macos")
+    parser.add_argument("--clang", type=Path, help="Windows LLVM installation directory")
     parser.add_argument("--cpu", choices=ARCHITECTURES)
     parser.add_argument("--android-sdk", type=Path, default=DEFAULT_ANDROID_SDK)
     parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE)
@@ -450,6 +451,10 @@ def main() -> None:
         return
     if args.jobs is not None and args.jobs < 1:
         parser.error("--jobs must be positive")
+    if args.platform == "windows":
+        from windows_skia import build_windows
+        build_windows(args)
+        return
     android = args.platform == "android"
     cpu = args.cpu or ("arm64" if android or platform.machine() == "arm64" else "x64")
     ndk = AndroidNdk.from_sdk(args.android_sdk) if android else None

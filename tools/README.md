@@ -2,7 +2,7 @@
 
 ## 构建
 
-需要 macOS Command Line Tools、Python 3.9+、Git 和 Ninja。构建使用
+macOS 构建需要 Command Line Tools、Python 3.10+、Git 和 Ninja。构建使用
 `/usr/bin/clang`、`/usr/bin/clang++` 和 `xcrun` 选中的 macOS SDK。
 `sync` 在缺少源码时从 Skia 官方 Git 获取固定提交。已有 checkout 必须在同一提交，
 且上游跟踪文件须保持干净。Skia 自带的 `tools/git-sync-deps` 同步 DEPS 并调用
@@ -83,6 +83,46 @@ C++ 驱动链接宿主应用统一提供的 NDK `libc++_shared.so`。
 API 25 真机已通过，旧 linker 对可执行文件的 `DT_FLAGS_1` 和 NDK libc++ 的
 一个动态条目打印警告，程序正常退出。API 23 已验证编译和链接，运行待实测。
 
+## Windows x64
+
+需要 Windows、Python 3.10+、Git、LLVM，以及带 C++ 桌面工具和 Windows SDK 的
+Visual Studio。脚本通过 `vswhere` 选择最新的 VS，加载其 x64 开发环境，并优先
+使用 VS 自带的原生 Ninja。`SKIA_LLVM` 指向 LLVM 安装目录，构建命令也可使用
+`--clang` 指定；验证、打包和冒烟命令使用 `SKIA_LLVM` 或 PATH 中的 clang-cl。
+
+```powershell
+$env:SKIA_LLVM = 'D:\01_software\clang+llvm-23.1.5-x86_64-pc-windows-msvc'
+python tools/build_skia.py all --platform windows --cpu x64 --jobs 8
+python tools/package_skia_sdk.py package --build .local/windows-x64 --destination .
+python tools/package_skia_sdk.py verify --sdk windows-x64/release
+python -m pip install Pillow
+python tools/smoke_skia_sdk.py --sdk windows-x64/release --font ../OGPlay/data/android/19/fonts/Roboto-Regular.ttf
+python tools/smoke_skia_sdk.py --sdk windows-x64/release --font ../OGPlay/data/android/19/fonts/Roboto-Regular.ttf --compiler msvc
+```
+
+`package` 的目标目录必须不存在；上面的命令用于首次发布。重新构建时，可指定
+`--destination .local/skia-sdk` 暂存，并在该 SDK 根目录下放置共用的 `include/`
+和 `licenses/`。`sync`、`configure`、`build`、`verify` 和 `print-config`
+也可分别运行，默认 GN 输出为 `.local/windows-x64/`。
+
+Windows 从 Skia 官方 GitHub 镜像获取同一固定提交，只同步 CPU SDK 所需的六个
+DEPS 仓库，并用上游 `bin/fetch-gn` 下载固定 GN。上游跟踪文件保持不变。
+配置沿用 CPU 栅格、FreeType 和自带编解码器，关闭 DirectWrite/GDI 字体管理器。
+使用 `/MD`、`/GR` 和 `is_trivial_abi=false`，以便 MSVC 宿主继承 Skia 类型。
+
+构建同时请求 `//:skia` 和 `//:pathops`，从 GN 查询 PathOps 的 `.obj` 文件，
+合入 SDK 的 `skia.lib`，保证 `Op`、`Simplify`、`AsWinding` 和 `SkOpBuilder`
+的定义随库分发。原始库保留在 GN 输出目录。SDK 副本移除关闭的 PDF 占位对象，并用
+`llvm-objcopy --strip-debug` 去除 CodeView 调试段。验证逐个检查 COFF x64 对象、
+CRT 指令、RTTI、PathOps 定义、禁用功能和系统字体/GL 导入，执行 `/WHOLEARCHIVE` 整库链接，
+将 GN 实际系统库依赖及可重定位工具路径写入清单。最终文件为
+`windows-x64/release/lib/skia.lib`，与已有平台共用头文件和许可证。
+
+已使用 clang-cl 23.1.5、MSVC 工具集 14.51.36231 和 Windows SDK 10.0.28000.0
+构建，并分别用 clang-cl 和 MSVC 编译 C++20 消费程序运行冒烟测试，包含
+PathOps 交集、简化及 `SkOpBuilder` 并集的结果检查。
+Windows 测试图通过 Pillow 生成；其他平台仍使用 `sips`。
+
 ## 打包
 
 公共头文件保留 Skia 的路径，只包含 SDK 公共接口和其传递包含的头文件。许可证目录
@@ -129,7 +169,6 @@ RTTI 子类检查在自定义 `SkBitmap::Allocator` 提供的像素内存上绘�
 
 ## 后续平台
 
-- Windows 按 CPU 单独生成 COFF 静态库，和宿主对齐 MSVC ABI、CRT 及 Release 宏。
-  核查 GN Windows 端的系统库依赖，并保持 DirectWrite/GDI 字体管理器关闭。
+- Windows arm64 需增加对应工具链、COFF 架构检查和设备运行验证。
 - iOS 分别使用 `iphoneos` 和 `iphonesimulator` SDK。设备与模拟器各自核对
   Mach-O 平台标记、最低版本及链接框架，继续检查 CoreText 符号和 ROM 字体输出。
